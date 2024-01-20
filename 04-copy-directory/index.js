@@ -18,3 +18,5 @@ copyDir(
   path.join(PARENT_DIRECTORY, 'files'),
   path.join(PARENT_DIRECTORY, 'files-copy'),
 );
+
+module.exports = { copyDir };

@@ -21,3 +21,5 @@ buildStyles(
   path.join(PARENT_DIRECTORY, 'styles'),
   path.join(PARENT_DIRECTORY, 'project-dist', 'bundle.css'),
 );
+
+module.exports = { buildStyles };
