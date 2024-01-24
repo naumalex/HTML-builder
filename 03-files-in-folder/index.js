@@ -11,7 +11,7 @@ const getFiles = async function () {
       if (file.isFile()) {
         let stat = await fs.stat(path.join(FOLDER_WITH_FILES, file.name));
         console.log(
-          `${path.basename(file.name)} - ${path
+          `${path.basename(file.name, path.extname(file.name))} - ${path
             .extname(file.name)
             .replace('.', '')} - ${stat.size / 1000}kb`,
         );
